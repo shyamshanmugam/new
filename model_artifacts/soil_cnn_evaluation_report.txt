@@ -1,0 +1,22 @@
+SOIL CNN EVALUATION REPORT
+==========================
+Test Accuracy: 0.3007
+Test Loss: 1.4163
+
+Classification Report:
+SOIL CNN EVALUATION REPORT
+==========================
+Test Accuracy: 0.3007
+Test Loss: 1.4163
+
+Classification Report:
+               precision    recall  f1-score   support
+
+Alluvial Soil     0.0000    0.0000    0.0000        25
+   Black Soil     0.0000    0.0000    0.0000        53
+    Clay Soil     0.0000    0.0000    0.0000        22
+     Red Soil     0.3007    1.0000    0.4624        43
+
+     accuracy                         0.3007       143
+    macro avg     0.0752    0.2500    0.1156       143
+ weighted avg     0.0904    0.3007    0.1390       143

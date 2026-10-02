@@ -1,0 +1,10 @@
+.inputs,
+.results,
+.history {
+  min-width: 0;
+}
+
+button:disabled {
+  cursor: wait;
+  opacity: 0.72;
+}

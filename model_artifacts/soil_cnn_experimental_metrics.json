@@ -1,0 +1,88 @@
+{
+  "model": "soil_cnn_experimental.keras",
+  "class_names": [
+    "Alluvial Soil",
+    "Black Soil",
+    "Clay Soil",
+    "Red Soil"
+  ],
+  "dataset": "final_soil_dataset",
+  "train_counts": [
+    75,
+    60,
+    30,
+    85
+  ],
+  "validation_counts": [
+    19,
+    15,
+    8,
+    21
+  ],
+  "test_counts": [
+    25,
+    53,
+    22,
+    43
+  ],
+  "epochs_completed": 14,
+  "test": {
+    "accuracy": 0.916083916083916,
+    "macro_recall": 0.9067768957676812,
+    "per_class": {
+      "Alluvial Soil": {
+        "precision": 0.7777777777777778,
+        "recall": 0.84,
+        "support": 25
+      },
+      "Black Soil": {
+        "precision": 1.0,
+        "recall": 0.9245283018867925,
+        "support": 53
+      },
+      "Clay Soil": {
+        "precision": 0.8,
+        "recall": 0.9090909090909091,
+        "support": 22
+      },
+      "Red Soil": {
+        "precision": 0.9761904761904762,
+        "recall": 0.9534883720930233,
+        "support": 43
+      }
+    },
+    "confusion_matrix": [
+      [
+        21,
+        0,
+        3,
+        1
+      ],
+      [
+        2,
+        49,
+        2,
+        0
+      ],
+      [
+        2,
+        0,
+        20,
+        0
+      ],
+      [
+        2,
+        0,
+        0,
+        41
+      ]
+    ],
+    "prediction_counts": [
+      27,
+      49,
+      25,
+      42
+    ]
+  },
+  "warning": "Experimental result on repository data; source licensing and independent validation are not established."
+}
