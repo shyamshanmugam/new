@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+  <title id="title">Field rows and a healthy seedling</title>
+  <desc id="desc">A cutaway illustration of planted field rows, green crops, and layered soil.</desc>
+  <rect width="1200" height="560" fill="#e9f0df"/>
+  <path d="M0 246c149-31 254-18 377 0 129 19 236 6 363-15 152-25 296-22 460 9v110H0Z" fill="#78955c"/>
+  <path d="M0 291c162-28 277-8 407 9 143 19 256-6 388-20 139-15 269-14 405 5v128H0Z" fill="#597d4b"/>
+  <path d="M0 359c184-25 325 9 475 7 157-2 283-27 432-28 111-1 207 9 293 21v201H0Z" fill="#76503a"/>
+  <path d="M0 432c190-29 328 18 487 9 175-10 321-51 472-39 92 7 163 22 241 35v123H0Z" fill="#593d31"/>
+  <path d="M0 497c175-26 335 22 511 10 176-12 304-46 444-38 99 5 165 20 245 31v60H0Z" fill="#442f28"/>
+  <g fill="none" stroke="#9a704f" stroke-width="4" opacity=".7">
+    <path d="M92 397c138-22 266 3 371 0s214-25 352-24 235 15 323 28"/>
+    <path d="M45 471c164-18 286 18 435 8s278-41 424-35 215 22 296 34"/>
+    <path d="M75 531c141-13 283 21 421 13s251-30 382-28 212 18 296 28"/>
+  </g>
+  <g stroke="#285b3b" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M596 302V179" fill="none" stroke-width="12"/>
+    <path d="M596 232c-51-4-79-29-82-71 43 1 72 22 82 71Zm1-35c45-7 69-31 70-70-40 6-64 29-70 70Z" fill="#4e8b4d" stroke-width="8"/>
+    <path d="M595 182c-2-32 10-52 35-66" fill="none" stroke-width="8"/>
+  </g>
+  <g fill="#d9a846">
+    <path d="M177 274c2-31 16-48 43-52 1 26-13 44-43 52Zm16 8c15-22 33-29 57-21-12 22-31 29-57 21Z"/>
+    <path d="M988 270c4-29 20-44 47-45-2 25-18 41-47 45Zm15 13c17-20 36-25 59-14-15 20-35 25-59 14Z"/>
+  </g>
+  <g fill="#f8f5e8" opacity=".8">
+    <path d="M77 94h206v4H77zm54 18h154v4H131zm679-28h261v4H864zm56 18h204v4H920z"/>
+  </g>
+  <g fill="#345d3e" font-family="Georgia,serif" font-size="22">
+    <text x="74" y="72">FIELD NOTES</text>
+    <text x="74" y="105" font-size="15" font-family="Arial,sans-serif" letter-spacing="2">HEALTHY GROUND, STRONGER ROOTS</text>
+  </g>
+</svg>

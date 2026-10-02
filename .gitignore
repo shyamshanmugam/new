@@ -1,21 +1,50 @@
+# Python environments and generated files
 .venv/
+.venv-*/
+venv/
+env/
 __pycache__/
 *.py[cod]
-.pytest_cache/
-.mypy_cache/
+*.pyd
+
+# Node and build output
+node_modules/
+**/node_modules/
+.next/
+**/.next/
+out/
+dist/
+build/
+*.tsbuildinfo
+.turbo/
+.cache/
+
+# Secrets and local configuration
 .env
 .env.*
 !.env.example
-data/raw/
-data/processed/
-models/
-artifacts/
-*.pt
-*.onnx
-*.joblib
-*.pkl
-node_modules/
-.next/
-dist/
-coverage.xml
-.coverage
+!**/.env.example
+
+# Logs, temporary files, and editor/OS metadata
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+
+# Local datasets and generated archives/reports
+/test/
+/train_data/
+/final_soil_dataset/
+/output/
+*.zip
+
+# Do not version extracted image datasets from preprocessing workflows.
+data/processed/images/train/
+data/processed/images/val/
+data/processed/images/test/

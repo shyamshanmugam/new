@@ -1,0 +1,16 @@
+{
+  "model_name": "EfficientNetB0 soil classifier (experimental)",
+  "model_version": "raw-pixels-fixed-2026-10-01",
+  "input_shape": [null, 224, 224, 3],
+  "output_classes": 4,
+  "class_names": [
+    "Alluvial Soil",
+    "Black Soil",
+    "Clay Soil",
+    "Red Soil"
+  ],
+  "source": "Local experimental retrain from the supplied EfficientNetB0 backbone",
+  "evaluation_accuracy": 0.9161,
+  "evaluation_split": "final_soil_dataset/test",
+  "quality_warning": "Small dataset; source licensing and independent external validation are not established."
+}

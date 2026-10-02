@@ -1,0 +1,11 @@
+# Install only when the inference service is implemented and a verified model
+# artifact is available.
+fastapi
+uvicorn[standard]
+python-multipart
+pydantic
+tensorflow==2.21.0
+scikit-learn
+joblib
+pillow
+httpx

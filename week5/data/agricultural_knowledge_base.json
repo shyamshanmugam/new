@@ -1,0 +1,84 @@
+{
+  "metadata": {
+    "title": "Soil advisory rule references",
+    "version": "1.0.0",
+    "units": "N, P and K in mg/kg (ppm); organic matter and moisture in percent",
+    "disclaimer": "Reference bands are demonstration defaults. Confirm laboratory method, crop, season, soil type and local Soil Health Card guidance before applying fertilizer or amendment rates.",
+    "sources": [
+      {
+        "name": "Soil Health Card, Department of Agriculture and Farmers Welfare, India",
+        "url": "https://soilhealth.dac.gov.in/files/Manual/Updated_140723FinalDraftManualClasses6_8.pdf",
+        "use": "soil-test interpretation and field-specific nutrient planning"
+      },
+      {
+        "name": "FAO, Management of acid soils",
+        "url": "https://www.fao.org/soils-portal/soil-management/management-of-some-problem-soils/acid-soils/en/",
+        "use": "acid-soil management context"
+      },
+      {
+        "name": "ICAR, balanced fertilizer use",
+        "url": "https://www.icar.gov.in/en/balanced-fertilizer-use-essential-sustainable-soil-health-and-crop-productivity-organised-icar",
+        "use": "balanced nutrient management context"
+      }
+    ]
+  },
+  "bands": {
+    "nitrogen": { "unit": "mg/kg", "low_below": 50, "adequate_max": 120 },
+    "phosphorus": { "unit": "mg/kg", "low_below": 30, "adequate_max": 60 },
+    "potassium": { "unit": "mg/kg", "low_below": 80, "adequate_max": 150 },
+    "ph": { "unit": "pH", "acid_below": 5.5, "target_min": 6.5, "target_max": 7.5, "alkaline_above": 7.5 },
+    "organic_matter": { "unit": "%", "very_low_below": 1.0, "low_below": 1.5, "adequate_max": 3.0 },
+    "moisture": { "unit": "%", "dry_below": 10, "adequate_max": 30 }
+  },
+  "soil_health_conditions": {
+    "nitrogen": { "low": "Below 50 mg/kg", "adequate": "50-120 mg/kg", "high": "Above 120 mg/kg" },
+    "phosphorus": { "low": "Below 30 mg/kg", "adequate": "30-60 mg/kg", "high": "Above 60 mg/kg" },
+    "potassium": { "low": "Below 80 mg/kg", "adequate": "80-150 mg/kg", "high": "Above 150 mg/kg" },
+    "ph": { "acidic": "Below 5.5", "slightly_acidic": "5.5-6.4", "target": "6.5-7.5", "alkaline": "Above 7.5" },
+    "organic_matter": { "very_low": "Below 1.0%", "low": "1.0-1.5%", "adequate": "At least 1.5%" },
+    "moisture": { "dry": "Below 10%", "adequate": "10-30%", "wet": "Above 30%" }
+  },
+  "recommendations": {
+    "nitrogen": {
+      "low": { "title": "Nitrogen management", "priority": "high", "actions": ["Confirm the crop-specific nitrogen dose using the soil-test report and local Soil Health Card.", "Split nitrogen applications to match crop demand and reduce avoidable losses.", "Use composted manure, legumes or green manure where suitable."], "caution": "Do not apply a universal nitrogen rate; account for crop, soil, season and previous nutrient inputs." },
+      "high": { "title": "Avoid extra nitrogen", "priority": "medium", "actions": ["Review the full soil test and crop plan before adding nitrogen.", "Avoid routine nitrogen application when the crop does not require it."], "caution": "A high test value is not, by itself, a diagnosis of toxicity." }
+    },
+    "phosphorus": {
+      "low": { "title": "Phosphorus management", "priority": "high", "actions": ["Confirm the crop-specific phosphorus dose from the Soil Health Card or local extension service.", "Use locally recommended basal placement near the root zone.", "Maintain organic matter and suitable crop residues."], "caution": "Phosphorus interpretation depends on the laboratory extraction method and local calibration." },
+      "high": { "title": "Avoid extra phosphorus", "priority": "medium", "actions": ["Review the soil-test method and crop plan before adding phosphorus.", "Avoid routine phosphorus application until the recommendation is confirmed."], "caution": "A high test value is not, by itself, a diagnosis of toxicity." }
+    },
+    "potassium": {
+      "low": { "title": "Potassium management", "priority": "high", "actions": ["Confirm the crop-specific potassium dose from the Soil Health Card or local extension service.", "Apply at the crop stage and placement advised locally.", "Return suitable crop residues to the soil."], "caution": "Do not apply a universal potassium rate; follow locally calibrated soil-test advice." },
+      "high": { "title": "Avoid extra potassium", "priority": "medium", "actions": ["Review the soil-test method and crop plan before adding potassium.", "Avoid routine potassium application until the recommendation is confirmed."], "caution": "A high test value is not, by itself, a diagnosis of toxicity." }
+    },
+    "ph": {
+      "acidic": { "title": "Acid soil management", "priority": "high", "actions": ["Request lime-requirement or buffer-pH testing before selecting an application rate.", "Use agricultural lime or dolomite only at a locally recommended rate.", "Consider locally adapted acid-tolerant crops while soil constraints are addressed."], "caution": "Do not estimate a lime rate from pH alone; soil texture and buffer capacity matter." },
+      "alkaline": { "title": "Alkaline soil assessment", "priority": "high", "actions": ["Check electrical conductivity, sodicity and irrigation-water quality before selecting an amendment.", "Consult a local soil laboratory or extension service for a field-specific plan.", "Maintain organic inputs where appropriate."], "caution": "High pH alone does not establish sodicity or identify the correct amendment." }
+    },
+    "organic_matter": {
+      "low": { "title": "Build soil organic matter", "priority": "medium", "actions": ["Use mature compost or well-decomposed manure where suitable.", "Add green manure, cover crops or legumes when the rotation allows.", "Avoid unnecessary residue burning."], "caution": "Account for nutrients in organic inputs and follow local nutrient-management guidance." }
+    },
+    "moisture": {
+      "dry": { "title": "Conserve soil moisture", "priority": "medium", "actions": ["Use mulch and schedule irrigation according to crop stage, soil texture and weather."], "caution": "A single moisture reading does not represent seasonal field water availability." },
+      "wet": { "title": "Review excess wetness", "priority": "medium", "actions": ["Check drainage, irrigation timing and compaction before adding fertilizer."], "caution": "A single moisture reading does not represent seasonal field water availability." }
+    },
+    "balanced": { "title": "Maintain balanced soil management", "priority": "low", "actions": ["Continue crop-specific soil-test planning and periodic testing."], "caution": "This prototype does not assess micronutrients, salinity, pests or disease." }
+  },
+  "soil_health_scoring": {
+    "method": "Arithmetic mean of six range-fit indicators: nitrogen, phosphorus, potassium, pH, organic matter and moisture. Each indicator contributes equally; scores are bounded from 0 to 100.",
+    "weights": { "nitrogen": 1, "phosphorus": 1, "potassium": 1, "ph": 1, "organic_matter": 1, "moisture": 1 },
+    "grades": { "good_min": 85, "fair_min": 70, "needs_improvement_min": 50 }
+  },
+  "crop_suitability": {
+    "method": "Weighted range-fit across crop requirements. Score is a compatibility indicator, not a guaranteed yield prediction.",
+    "weights": { "ph": 0.30, "n": 0.12, "p": 0.12, "k": 0.12, "organic_matter": 0.16, "moisture": 0.18 },
+    "grades": { "suitable_min": 75, "improve_min": 55 },
+    "organic_matter_score_max": 3
+  },
+  "rules": {
+    "fertilizer": "Use crop- and district-specific Soil Health Card guidance. Do not prescribe a universal kg/ha rate from these bands.",
+    "fertilizer_application_guidance": "Base fertilizer source, dose, timing and placement on the crop, soil-test method, season, local calibration and Soil Health Card. Split mobile nutrients when advised and avoid application immediately before heavy rain or irrigation.",
+    "acid_soil": "Request lime requirement or buffer-pH testing before selecting a lime or dolomite rate.",
+    "alkaline_soil": "Check EC, sodicity and irrigation-water quality before selecting an amendment."
+  }
+}
